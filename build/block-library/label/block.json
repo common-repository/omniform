@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/wp/6.3/schemas/json/block.json",
+  "apiVersion": 3,
+  "name": "omniform/label",
+  "category": "omniform-control-simple",
+  "title": "Form Label",
+  "description": "A label associated with one form field.",
+  "textdomain": "omniform",
+  "ancestor": [
+    "omniform/field"
+  ],
+  "attributes": {
+    "fieldLabel": {
+      "type": "string",
+      "__experimentalRole": "content"
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true
+    },
+    "spacing": {
+      "padding": true
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType",
+    "omniform/fieldGroupName",
+    "omniform/fieldGroupLabel",
+    "omniform/fieldGroupIsRequired",
+    "omniform/fieldLabel",
+    "omniform/fieldName",
+    "omniform/fieldIsRequired"
+  ],
+  "editorScript": "file:index.js",
+  "style": "file:style-index.css"
+}

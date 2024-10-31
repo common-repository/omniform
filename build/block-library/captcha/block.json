@@ -1,0 +1,46 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/wp/6.3/schemas/json/block.json",
+  "apiVersion": 3,
+  "name": "omniform/captcha",
+  "category": "omniform-control-simple",
+  "title": "Captcha",
+  "description": "Add an extra layer of form protection against spam.",
+  "textdomain": "omniform",
+  "attributes": {
+    "service": {
+      "type": "string",
+      "default": "recaptchav2",
+      "enum": [
+        "recaptchav2",
+        "recaptchav3",
+        "hcaptcha",
+        "turnstile"
+      ]
+    },
+    "theme": {
+      "type": "string",
+      "default": "light",
+      "enum": [
+        "light",
+        "dark"
+      ]
+    },
+    "size": {
+      "type": "string",
+      "default": "normal",
+      "enum": [
+        "normal",
+        "compact",
+        "invisible"
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "multiple": false
+  },
+  "editorScript": "file:index.js",
+  "editorStyle": "file:index.css",
+  "style": "file:style-index.css",
+  "viewScript": "file:view.js"
+}

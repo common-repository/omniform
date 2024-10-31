@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/wp/6.3/schemas/json/block.json",
+  "apiVersion": 3,
+  "name": "omniform/form",
+  "category": "omniform",
+  "title": "OmniForm",
+  "description": "Easily create professional forms for your website",
+  "textdomain": "omniform",
+  "attributes": {
+    "ref": {
+      "type": "number"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "align": [
+      "full",
+      "wide"
+    ],
+    "html": false,
+    "reusable": false,
+    "__experimentalLayout": {
+      "allowEditing": false
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "editorScript": "file:index.js",
+  "editorStyle": "file:index.css",
+  "style": "file:style-index.css",
+  "viewScript": "file:view.js"
+}

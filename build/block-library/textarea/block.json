@@ -1,0 +1,49 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/wp/6.3/schemas/json/block.json",
+  "apiVersion": 3,
+  "name": "omniform/textarea",
+  "category": "omniform-control-simple",
+  "title": "Textarea",
+  "description": "A field for long-form text responses.",
+  "textdomain": "omniform",
+  "ancestor": [
+    "omniform/field"
+  ],
+  "attributes": {
+    "fieldPlaceholder": {
+      "type": "string"
+    },
+    "fieldValue": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true
+    },
+    "spacing": {
+      "padding": true
+    },
+    "dimensions": {
+      "minHeight": true,
+      "__experimentalDefaultControls": {
+        "minHeight": true
+      }
+    },
+    "__experimentalBorder": true
+  },
+  "usesContext": [
+    "postId",
+    "postType",
+    "omniform/fieldGroupName",
+    "omniform/fieldGroupLabel",
+    "omniform/fieldGroupIsRequired",
+    "omniform/fieldLabel",
+    "omniform/fieldName",
+    "omniform/fieldIsRequired"
+  ],
+  "editorScript": "file:index.js",
+  "style": "file:style-index.css"
+}

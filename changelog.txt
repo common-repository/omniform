@@ -1,0 +1,55 @@
+
+1.2.1 / 2024-04-10
+==================
+
+  * Fixed improper check for success/error message blocks
+  * Resolved array to string conversion warning
+
+
+1.2.0 / 2024-04-09
+==================
+
+  * Fixed Cloudflare Turnstile validation in Captcha block
+  * Added ability to customize email notification [#25](https://github.com/jrtashjian/omniform/pull/25)
+  * Introduced success and error message blocks [#23](https://github.com/jrtashjian/omniform/pull/23)
+  * Improved block splitting, replacing, removing, and merging of form blocks [#22](https://github.com/jrtashjian/omniform/pull/22)
+  * Introduced Hidden inputs with custom callbacks [#21](https://github.com/jrtashjian/omniform/pull/21)
+  * Fixed display of form blocks in the Style Book
+  * Allowed form to be rendered while previewing
+
+
+1.1.0 / 2024-04-01
+==================
+
+  * Improve validation for grouped fields [#18](https://github.com/jrtashjian/omniform/pull/18)
+  * Require WordPress version 6.3
+  * Upgrade blocks to API version 3
+  * Properly restrict nested blocks within the form block
+  * Use global content_width for preview viewportWidth, if available
+  * Add proper password protection for form rendering
+
+1.0.5 / 2023-11-10
+==================
+
+  * Fix is_required() method to return false if both contexts are null
+  * Fix field name sanitization in BaseControlBlock
+  * Toolbar Addition: Set Fields or Fieldsets as Required [#17](https://github.com/jrtashjian/omniform/pull/17)
+  * Focus message container after submission
+  * Textarea placeholder should not be the value
+
+1.0.4 / 2023-09-19
+==================
+
+  * Make newsletter notice dismissable [#16](https://github.com/jrtashjian/omniform/pull/16)
+  * Show the form editor post title
+
+1.0.3 / 2023-09-09
+==================
+
+  * Field specific validation rules [#15](https://github.com/jrtashjian/omniform/pull/15)
+  * Language pack support [#14](https://github.com/jrtashjian/omniform/pull/14)
+
+1.0.2 / 2023-09-06
+==================
+
+  * Initial release on WordPress.org!

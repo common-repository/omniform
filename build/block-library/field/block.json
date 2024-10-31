@@ -1,0 +1,60 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/wp/6.3/schemas/json/block.json",
+  "apiVersion": 3,
+  "name": "omniform/field",
+  "category": "omniform-control-simple",
+  "title": "Form field",
+  "description": "A consolidated form control component.",
+  "textdomain": "omniform",
+  "attributes": {
+    "fieldLabel": {
+      "type": "string"
+    },
+    "fieldName": {
+      "type": "string"
+    },
+    "isRequired": {
+      "type": "boolean"
+    }
+  },
+  "providesContext": {
+    "omniform/fieldLabel": "fieldLabel",
+    "omniform/fieldName": "fieldName",
+    "omniform/fieldIsRequired": "isRequired"
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true,
+      "background": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "__experimentalBorder": true,
+    "__experimentalLayout": {
+      "allowEditing": true,
+      "allowInheriting": false,
+      "allowSizingOnChildren": true,
+      "default": {
+        "type": "flex",
+        "orientation": "vertical",
+        "justifyContent": "stretch"
+      }
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType",
+    "omniform/fieldGroupName",
+    "omniform/fieldGroupLabel",
+    "omniform/fieldGroupIsRequired"
+  ],
+  "editorScript": "file:index.js",
+  "style": "file:style-index.css"
+}

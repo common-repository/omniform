@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/wp/6.3/schemas/json/block.json",
+  "apiVersion": 3,
+  "name": "omniform/select-option",
+  "category": "omniform-control-simple",
+  "title": "Option",
+  "description": "An selectable option within a Select block.",
+  "textdomain": "omniform",
+  "ancestor": [
+    "omniform/select"
+  ],
+  "attributes": {
+    "fieldLabel": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:index.js",
+  "editorStyle": "file:index.css"
+}

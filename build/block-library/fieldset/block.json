@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/wp/6.3/schemas/json/block.json",
+  "apiVersion": 3,
+  "name": "omniform/fieldset",
+  "category": "omniform-control-simple",
+  "title": "Fieldset",
+  "description": "Organize and group related controls.",
+  "textdomain": "omniform",
+  "attributes": {
+    "fieldLabel": {
+      "type": "string"
+    },
+    "fieldName": {
+      "type": "string"
+    },
+    "isRequired": {
+      "type": "boolean"
+    }
+  },
+  "providesContext": {
+    "omniform/fieldGroupName": "fieldName",
+    "omniform/fieldGroupLabel": "fieldLabel",
+    "omniform/fieldGroupIsRequired": "isRequired"
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true,
+      "__experimentalDefaultControls": {
+        "blockGap": true
+      }
+    },
+    "__experimentalBorder": true,
+    "__experimentalLayout": {
+      "allowEditing": false
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "editorScript": "file:index.js",
+  "style": "file:style-index.css"
+}
